@@ -127,42 +127,29 @@ public class Aplicacion extends javax.swing.JFrame {
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
         // TODO add your handling code here:
-
-        Usuario u = new Usuario();
-        u.setNo1(Float.parseFloat(txtNo1.getText()));
-        u.setNo2(Float.parseFloat(txtNo2.getText()));
         
-        Operaciones oprcn = new Operaciones(u.getNo1(), u.getNo2());
+        Operaciones oprcn = new Operaciones(txtNo1.getText(),txtNo2.getText());
         lblResultado.setText("La suma es: " + oprcn.suma());
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
         // TODO add your handling code here:
-        Usuario u = new Usuario();
-        u.setNo1(Float.parseFloat(txtNo1.getText()));
-        u.setNo2(Float.parseFloat(txtNo2.getText()));
         
-        Operaciones oprcn = new Operaciones(u.getNo1(), u.getNo2());
+        Operaciones oprcn = new Operaciones(txtNo1.getText(),txtNo2.getText());
         lblResultado.setText("La resta es: " + oprcn.resta());
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btnMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultActionPerformed
         // TODO add your handling code here:
-        Usuario u = new Usuario();
-        u.setNo1(Float.parseFloat(txtNo1.getText()));
-        u.setNo2(Float.parseFloat(txtNo2.getText()));
         
-        Operaciones oprcn = new Operaciones(u.getNo1(), u.getNo2());
+        Operaciones oprcn = new Operaciones(txtNo1.getText(),txtNo2.getText());
         lblResultado.setText("La multiplicación es: " + oprcn.multiplicacion());
     }//GEN-LAST:event_btnMultActionPerformed
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
         // TODO add your handling code here:
-        Usuario u = new Usuario();
-        u.setNo1(Float.parseFloat(txtNo1.getText()));
-        u.setNo2(Float.parseFloat(txtNo2.getText()));
         
-        Operaciones oprcn = new Operaciones(u.getNo1(), u.getNo2());
+        Operaciones oprcn = new Operaciones(txtNo1.getText(),txtNo2.getText());
         lblResultado.setText("La división es: " + oprcn.division());
     }//GEN-LAST:event_btnDivActionPerformed
 

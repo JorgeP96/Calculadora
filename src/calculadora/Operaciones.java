@@ -13,9 +13,9 @@ public class Operaciones {
     private float no1;
     private float no2;
     
-    public Operaciones(float no1, float no2){
-        this.no1 = getNo1();
-        this.no2 = getNo2();
+    public Operaciones(String no1, String no2){
+        this.no1 = Float.parseFloat(no1);
+        this.no2 = Float.parseFloat(no2);
     }
 
     public float getNo1() {
